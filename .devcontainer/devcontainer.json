@@ -1,0 +1,43 @@
+{
+  "name": "Ruby RSpec Environment",
+  "image": "mcr.microsoft.com/devcontainers/ruby:3.4",
+
+  "postCreateCommand": "bundle install",
+
+  "customizations": {
+    "vscode": {
+      "extensions": ["rebornix.Ruby"],
+      "settings": {
+        /* Disable IntelliSense & suggestions */
+        "editor.suggestOnTriggerCharacters": false,
+        "editor.acceptSuggestionOnEnter": "off",
+        "editor.tabCompletion": "off",
+        "editor.wordBasedSuggestions": "off",
+        "editor.parameterHints.enabled": false,
+        "editor.hover.enabled": "off",
+
+        /* Disable inline suggestions (Copilot-style) */
+        "editor.inlineSuggest.enabled": false,
+
+        /* Disable snippets */
+        "editor.snippetSuggestions": "none",
+
+        /* Disable code actions & lightbulb */
+        "editor.codeActionsOnSave": {},
+        "editor.lightbulb.enabled": "off",
+
+        /* Disable signature help */
+        "editor.signatureHelp.enabled": false,
+
+        /* Disable breadcrumbs & minimap (optional) */
+        "breadcrumbs.enabled": false,
+        "editor.minimap.enabled": false,
+
+        /* Disable startup noise */
+        "workbench.startupEditor": "none",
+
+        "chat.agent.enabled": false
+      }
+    }
+  }
+}
